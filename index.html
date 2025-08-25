@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aplikasi Pengirim Barang</title>
+
+    <style>
+
+        body {
+
+            font-family: sans-serif;
+
+            background-color: blue;
+
+            margin: 0;
+
+            padding: 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            min-height: 100vh;
+
+        }
+
+        .container {
+
+            background-color: yellow;
+
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            width: 100%;
+
+            max-width: 600px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            color: #333;
+
+        }
+
+        .form-group {
+
+            margin-bottom: 15px;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-weight: bold;
+
+        }
+
+        input[type="text"],
+
+        textarea,
+
+        input[type="number"] {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            box-sizing: border-box; /* Agar padding tidak menambah lebar */
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 12px;
+
+            background-color: #green;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 4px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background-color: #green;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Pesan Pengiriman Barang IPA EXPRESS</h1>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+
+                <label for="nama-pengirim">Nama Pengirim:</label>
+
+                <input type="text" id="nama-pengirim" name="nama_pengirim" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="alamat-pengirim">Alamat Pengirim:</label>
+
+                <textarea id="alamat-pengirim" name="alamat_pengirim" rows="3" required></textarea>
+
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+
+                <label for="nama-penerima">Nama Penerima:</label>
+
+                <input type="text" id="nama-penerima" name="nama_penerima" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="alamat-penerima">Alamat Penerima:</label>
+
+                <textarea id="alamat-penerima" name="alamat_penerima" rows="3" required></textarea>
+
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+
+                <label for="deskripsi-barang">Deskripsi Barang:</label>
+
+                <input type="text" id="deskripsi-barang" name="deskripsi_barang" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="berat-barang">Berat Barang (kg):</label>
+
+                <input type="number" id="berat-barang" name="berat_barang" min="0.1" step="0.1" required>
+
+            </div>
+
+            <button type="submit">Kirim Pesanan</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
